@@ -421,7 +421,7 @@ class ChatBot(Client):
 
             if ("search pdf" in msg):
                 searchFiles(self)
-            elif ("@jekoy bot" in msg):
+            elif ("@jekoy" in msg):
                 query = " ".join(msg.split(" ")[1:])
                 reply = chatGPT(self, query)
                 sendQuery()
