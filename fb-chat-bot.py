@@ -404,7 +404,7 @@ class ChatBot(Client):
                               thread_id=thread_id, thread_type=ThreadType.USER)
 
         def chatGPT(self, query):
-            openai.api_key = "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"
+            openai.api_key = "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"
 
             response = openai.Completion.create(
                 model="text-davinci-003",
@@ -421,7 +421,7 @@ class ChatBot(Client):
 
             if ("search pdf" in msg):
                 searchFiles(self)
-            elif ("jake gwapo" in msg):
+            elif ("jake" in msg):
                 query = " ".join(msg.split(" ")[1:])
                 reply = chatGPT(self, query)
                 sendQuery()
