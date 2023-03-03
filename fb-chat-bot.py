@@ -421,7 +421,7 @@ class ChatBot(Client):
 
             if ("search pdf" in msg):
                 searchFiles(self)
-            elif ("@jekoy" in msg):
+            elif ("jake gwapo" in msg):
                 query = " ".join(msg.split(" ")[1:])
                 reply = chatGPT(self, query)
                 sendQuery()
@@ -559,7 +559,7 @@ class ChatBot(Client):
             elif ("hello" in msg or "hlo" in msg):
                 reply = "Hi"
                 sendMsg()
-            elif (msg == "hii"):
+            elif (msg == "hi"):
                 reply = "Hello! How can I help you?"
                 sendMsg()
 
@@ -606,7 +606,7 @@ class ChatBot(Client):
                 elif("//scontent.xx.fbc" in unsent_msg):
 
                     if(thread_type == ThreadType.USER):
-                        reply = f"🤞You just unsent an image🤞"
+                        reply = f"You just unsent an image"
                         self.send(Message(text=reply), thread_id=thread_id,
                                   thread_type=thread_type)
                         self.sendRemoteFiles(
@@ -615,7 +615,7 @@ class ChatBot(Client):
                         user = self.fetchUserInfo(f"{author_id}")[
                             f"{author_id}"]
                         username = user.name.split()[0]
-                        reply = f"🤣@{username} just unsent an image 🤣"
+                        reply = f"{username} just unsent an image"
                         self.send(Message(text=reply), thread_id=thread_id,
                                   thread_type=thread_type)
                         self.sendRemoteFiles(
@@ -629,7 +629,7 @@ class ChatBot(Client):
                         user = self.fetchUserInfo(f"{author_id}")[
                             f"{author_id}"]
                         username = user.name.split()[0]
-                        reply = f" 🤣@{username} just unsent a message:\n🤞{unsent_msg}🤞"
+                        reply = f"{username} just unsent a message:\n{unsent_msg}"
                         self.send(Message(text=reply), thread_id=thread_id,
                                   thread_type=thread_type)
 
@@ -683,7 +683,7 @@ cookies = {
     "fr": "0NxayJuewRHQ30OX3.AWVJwIYNh0Tt8AJv6kSwDamhkoM.BiMrVd.Iu.AAA.0.0.BiMtVZ.AWXMVaiHrpQ",
     "c_user": "100090437245357",
     "datr": "xasyYs51GC0Lq5H5lvXTl5zA",
-    "xs": "5%3A9820frBe_JUqvg%3A2%3A1677835466%3A-1%3A-1%3A%3AAcU_4m7h2TvLhrhUBSgRK3j-uPIjjEqC1ESRta-1R9I"
+    "xs": "5%3A9820frBe_JUqvg%3A2%3A1677835466%3A-1%3A-1%3A%3AAcW59h_5CuVjc44fzxEZ-f_-n_XRVPP0uU0FlRGcew"
 }
 
 
