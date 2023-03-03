@@ -404,7 +404,7 @@ class ChatBot(Client):
                               thread_id=thread_id, thread_type=ThreadType.USER)
 
         def chatGPT(self, query):
-            openai.api_key = "YOUR_API_KEY"
+            openai.api_key = "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"
 
             response = openai.Completion.create(
                 model="text-davinci-003",
@@ -421,7 +421,7 @@ class ChatBot(Client):
 
             if ("search pdf" in msg):
                 searchFiles(self)
-            elif ("chatgpt" in msg):
+            elif ("jake gwapo" in msg):
                 query = " ".join(msg.split(" ")[1:])
                 reply = chatGPT(self, query)
                 sendQuery()
@@ -495,6 +495,9 @@ class ChatBot(Client):
                     pass
             elif ("busy" in msg):
                 reply = "Nobody is busy. Only things are prioritized."
+                sendMsg()
+            elif ("atay" in msg):
+                reply = "Huy, unsay atay bastos ka!"
                 sendMsg()
             elif("help" in msg):
                 reply = "Sure! What should I do?"
@@ -680,7 +683,7 @@ cookies = {
     "fr": "0NxayJuewRHQ30OX3.AWVJwIYNh0Tt8AJv6kSwDamhkoM.BiMrVd.Iu.AAA.0.0.BiMtVZ.AWXMVaiHrpQ",
     "c_user": "100090437245357",
     "datr": "xasyYs51GC0Lq5H5lvXTl5zA",
-    "xs": "5%3A9820frBe_JUqvg%3A2%3A1677835466%3A-1%3A-1"
+    "xs": "5%3A9820frBe_JUqvg%3A2%3A1677835466%3A-1%3A-1%3A%3AAcW59h_5CuVjc44fzxEZ-f_-n_XRVPP0uU0FlRGcew"
 }
 
 
