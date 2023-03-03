@@ -559,7 +559,7 @@ class ChatBot(Client):
             elif ("hello" in msg or "hlo" in msg):
                 reply = "Hi"
                 sendMsg()
-            elif (msg == "hi"):
+            elif (msg == "hii"):
                 reply = "Hello! How can I help you?"
                 sendMsg()
 
