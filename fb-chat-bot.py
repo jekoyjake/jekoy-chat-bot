@@ -404,7 +404,9 @@ class ChatBot(Client):
                               thread_id=thread_id, thread_type=ThreadType.USER)
 
         def chatGPT(self, query):
-            openai.api_key = "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"
+            import os
+            
+            openai.api_key = os.environ['API_KEY_CHATBOT']
 
             response = openai.Completion.create(
                 model="text-davinci-003",
