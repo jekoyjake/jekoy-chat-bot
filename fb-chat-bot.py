@@ -406,7 +406,7 @@ class ChatBot(Client):
         def chatGPT(self, query):
             import os
             
-            openai.api_key = os.environ[API_KEY_CHATBOT]
+            openai.api_key = os.environ['API_KEY_CHATBOT']
 
             response = openai.Completion.create(
                 model="text-davinci-003",
